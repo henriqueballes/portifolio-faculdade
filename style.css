@@ -1,0 +1,71 @@
+@charset "UTF-8";
+
+:root {
+    --cor0: #0d233a; 
+    --cor1: #00bcd4;   
+    --cor2: #f4f6f9;      
+    --cor3: #212529;      
+    --cor4: #ffffff;      
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+    /* ESTILIZAÇÃO PADRÃO DO BODY*/
+
+body {
+    background-color: var(--cor4);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+    /*ESTILIZAÇÃO DO HEADER*/
+
+header {
+    background-image: linear-gradient(to bottom, var(--cor0), var(--cor1) 215%);
+    padding: 20px;
+}
+
+header h1 {    
+    color: var(--cor2);
+    text-align: center;
+    font-size: 2em;
+    font-weight: bolder;
+    margin-bottom: 20px;
+}
+
+header > p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2em;
+    color: var(--cor2);
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+header img {
+    width: 850px;
+    max-width: 100%;
+    height: auto; 
+    display: block;
+    margin: 0 auto;
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.5);
+}
+
+header > nav {
+    text-align: center;
+    padding-top: 20px;
+}
+
+header > nav > a {
+    color: var(--cor2);
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition-duration: 0.5s;
+}
+
+header > nav > a:hover {
+    background-color: var(--cor0);
+}
